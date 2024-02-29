@@ -1,0 +1,109 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background-image: url(../image/GGEE.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 2em;
+}
+
+.row {
+    display: flex;
+    font-size: 6em;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: .3em; */
+    text-shadow: 2px 2px 5px black;
+    color: rgb(235,232,229);
+    -webkit-text-stroke: 1px rgb(116,106,104);
+}
+
+
+#days{
+    line-height: .5em;
+    margin-bottom: .5em;
+    font-size: 10rem;
+    margin-top: 1em;
+    text-shadow: 0 0 20px 4px #ffffff;
+}
+
+
+#days span{
+    font-size: 3rem;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 3rem;
+    word-wrap: break-word;
+    color: rgb(235,232,229);
+    /* -webkit-text-stroke: 1px rgb(116,106,104); */
+}
+
+.counter span{
+    color: rgb(235,232,229);
+}
+
+#hours, #minutes, #seconds {
+    display: flex;
+    text-align: center;
+    border-radius: 1rem;
+    margin-bottom: .5em;
+    border: 3px solid whitesmoke;
+    backdrop-filter: blur (5px);
+    /* background-color: rgba(245, 245, 245, 0.257); */
+    box-shadow: 0 0 20px 4px #ffffff;
+}
+
+#opener {
+    font-size: 5rem;
+}
+#endate {
+    font-size: 2rem;
+    color: rgb(235,232,229);
+    display: flex;
+    text-align: center;
+}
+
+p {
+    margin-top: 1rem;
+    color: rgb(235,232,229);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1em;
+    }
+
+    .row {
+        font-size: 4em;
+    }
+
+    #days {
+        font-size: 8rem;
+    }
+
+    .counter {
+        font-size: 2.5rem;}
+
+    #opener {
+        font-size: 3.5rem;
+    }
+
+    #endate {
+        font-size: 1.5rem; }
+}
